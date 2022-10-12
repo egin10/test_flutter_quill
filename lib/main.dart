@@ -1,31 +1,40 @@
 import 'package:flutter/material.dart';
 
-import 'flutter_quill_widget.dart';
+import 'flutter_camera_overlay.dart';
+// import 'flutter_quill_widget.dart';
 
-void main() {
+main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+
+  runApp(
+    const ExampleCameraOverlay(),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+// void main() {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   runApp(const MyApp());
+// }
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Quill Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text('QUILL EDITOR'),
-        ),
-        body: const FlutterQuillWidget(),
-      ),
-    );
-  }
-}
+// class MyApp extends StatelessWidget {
+//   const MyApp({Key? key}) : super(key: key);
+
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: 'Flutter Quill Demo',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       home: Scaffold(
+//         appBar: AppBar(
+//           centerTitle: true,
+//           title: const Text('QUILL EDITOR'),
+//         ),
+//         body: const FlutterQuillWidget(),
+//       ),
+//     );
+//   }
+// }
